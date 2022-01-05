@@ -1,0 +1,207 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+	{% load static %}
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AlgoTatum</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Jakob Richert" />
+	<!-- Favicon  -->
+  <link rel="shortcut icon" href="{% static 'algorand/img/favicon.png' %}">
+	<!-- CSS File  -->
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/boxicon.min.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/magnific-popup.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/animate.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/meanmenu.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/splitting-cells.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/splitting.css' %}">
+  <link rel="stylesheet" type= "text/css" href="{% static 'algorand/css/style.css' %}">
+  <link rel="stylesheet" type = "text/css" href="{% static 'algorand/css/responsive.css' %}">
+	<!-- End CSS File  -->  
+</head>
+
+<body>
+ 
+	
+<div class="mim_tm_all_wrap" data-magic-cursor="" data-color="crimson">	<!-- Mouse Animation -->
+  
+	<header id="header-area" class="header-transparent sticky">	<!-- start header -->	
+		<div class="mobile_menubar">
+			<i class='bx bx-menu'></i>
+		</div>			
+		<div class="main-menu-area">	<!-- Main Menu Area -->
+			<div class="container container-main-menu">	<!-- Container -->
+				<div class="main-menu d-flex align-items-center">
+					<div class="logo">	<!-- Logo -->
+						<a href="index.html" class="navbar-brand">
+							<img src="{%static 'algorand/img/logo.png' %}" alt="logo">
+						</a>
+					</div>	<!-- End Logo -->
+					<div class="menu ml-auto d-flex">
+						<nav class="navigation" id="mobile-menu">
+							<ul class="menu-list list-style-none mb-0">
+								<li><a href='index.html'>Home</a></li>
+								<li><a href='wallet.html'>Your Account</a></li>
+								<li><a href='signup.html'>Signup</a></li>
+								<li><a href='signin.html'>Sign in</a></li>
+								<li class="has-children"><a href="#">Explore Algorand NFT's</a>
+									<ul class="sub-menu">
+										<li><a href="explores.html">Your NFT's</a></li>											
+										<li><a href="live.html">Nft's for sale</a></li>
+									</ul>
+								</li>
+					
+							
+								
+							
+							</ul>
+						</nav>
+						
+					
+					</div>
+					<!-- Responsive Menu -->
+					<div class="mobile-menu mobile-menu-preview"></div>
+				</div>
+				<div class="main-menu-icon">
+					<span class="line line-1"></span>
+					<span class="line line-2"></span>
+					<span class="line line-3"></span>
+				</div> <!-- responsive menu icon -->
+			</div> <!-- end container -->
+		</div>	<!-- end main menu area -->
+</header>	<!-- end header -->
+	
+	<div id="hero-slider-area" class="header-hero-area site-breadcrumb-header fix"> <!-- start header banner -->
+		
+		<!-- Start Breadcrumb
+		============================================= -->
+		<div class="site-breadcrumb pb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center pt-200">
+					
+						<h2 data-splitting class="breadcrumb-title wow fadeInUp" data-wow-duration=".003s" data-wow-delay=".003s"> Welcome {{username}} </h2>
+						<ul class="breadcrumb-menu clearfix">
+						</ul>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End  Breadcrumb -->				
+	</div><!-- end header hero area -->
+	<div class="dark-bg-all wallet-connent pt-100 pb-200"><!-- start dark bg area -->
+		<div class="container"><!-- start container -->
+			<div class="row"><!-- start row -->
+				<div class="col-md-6 col-sm-12 mt-10 pb-30"><!-- start col-6 -->
+					<div data-splitting class="section_intro wow fadeInUp" data-wow-duration=".003s" data-wow-delay=".003s">
+						<p>Generate your algorand wallet</p>
+					</div>
+				</div><!-- end col-6 -->
+				<div class="col-md-6 col-sm-12"><!-- start col-6 -->
+				</div><!-- end col-6 -->
+			</div><!-- end row -->		
+			<div class="row"><!-- start row -->
+				<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+					<div class="single_product wallet-single mt-50 pb-30"> <!-- Single Product -->
+						<a href="signin.html" class="wallet_link">		
+							<img src="{% static 'algorand/img/logo.png' %}" alt="" class="responsive-fluid" />
+							<h6 class="wallet-name">Algorand</h6>
+							<p class="wallet-description">Click Here to Generate a New Algorand Wallet</p>
+						</a>
+						<a href="signin.html" class="arrow-wallet">
+							<i class='bx bx-arrow-back'></i>
+						</a>
+					</div> <!-- End Single Product -->
+				</div> <!-- End col-4 -->
+				<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+					<div class="single_product wallet-single mt-50 pb-30"> <!-- Single Product -->
+							
+							
+							<h6 class="wallet-name">Wallet Address</h6>
+							<p>{{address}}</p>
+						</a>
+									
+					</div> <!-- End Single Product -->
+				</div> <!-- End col-4 -->
+				<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+					
+				</div> <!-- End col-4 -->
+				<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+					<div class="single_product wallet-single mt-50 pb-30"> <!-- Single Product -->
+						<a href="signin.html" class="wallet_link">		
+							<img src="{% static 'algorand/img/wallet/4.png' %}" alt="" class="responsive-fluid" />
+							<h6 class="wallet-name">Torus</h6>
+							<p class="wallet-description">Integrate Wallet by Torus into your app and get a direct connection to Ethereum, Polygon.</p>
+						</a>
+						<a href="signin.html" class="arrow-wallet">
+							<i class='bx bx-arrow-back'></i>
+						</a>						
+					</div> <!-- End Single Product -->
+				</div> <!-- End col-4 -->
+				<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+					<div class="single_product wallet-single mt-50 pb-30"> <!-- Single Product -->
+						<a href="signin.html" class="wallet_link">		
+							<img src="{% static 'algorand/img/wallet/5.png' %}" alt="" class="responsive-fluid" />
+							<h6 class="wallet-name">Fortmatic</h6>
+							<p class="wallet-description">Points the way towards a world in which users identity and the best way is decentralized.</p>
+						</a>
+						<a href="signin.html" class="arrow-wallet">
+							<i class='bx bx-arrow-back'></i>
+						</a>						
+					</div> <!-- End Single Product -->
+				</div> <!-- End col-4 -->
+				<div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s"><!-- start col-4 -->
+					<div class="single_product wallet-single mt-50 pb-30"> <!-- Single Product -->
+						<a href="signin.html" class="wallet_link">		
+							<img src="{% static 'algorand/img/wallet/6.png' %}" alt="" class="responsive-fluid" />
+							<h6 class="wallet-name">Coinbase Wallet</h6>
+							<p class="wallet-description">Coinbase the easiest and most secure crypto wallet. Download our new Wallet extension</p>
+						</a>
+						<a href="signin.html" class="arrow-wallet">
+							<i class='bx bx-arrow-back'></i>
+						</a>						
+					</div> <!-- End Single Product -->
+				</div> <!-- End col-4 -->			
+			</div><!-- End row -->
+		</div><!-- End container -->
+	</div><!-- End dark bg area -->
+	
+	
+	<!-- Back to Top
+	============================================= --> 
+	<a id="back-to-top" class="rounded-circle" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)">
+		<i class='bx bxs-chevron-up'></i>
+	</a> 
+	
+	<!-- CURSOR -->
+	<div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+	<!-- /CURSOR -->	
+</div>	<!-- Mouse Cursor Animation End --> 	
+	
+  <!-- Start JS File -->	
+  <script src="{% static 'algorand/js/main.js' %}"></script>
+  <script src="{% static 'algorand/js/modernizr-3.8.0.min.js' %}"></script>
+  <script src="{% static 'algorand/js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'algorand/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'algorand/js/popper.min.js' %}"></script>
+  <script src="{% static 'algorand/js/jquery.appear.min.js' %}"></script>
+  <script src="{% static 'algorand/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'algorand/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'algorand/js/jquery.waypoints.min.js' %}"></script> 
+  <script src="{% static 'algorand/js/wow.js' %}"></script>  
+  <script src="{% static 'algorand/js/splitting-animation.js' %}"></script>
+  <script src="{% static 'algorand/js/splitting.min.js' %}"></script>
+  <script src="{% static 'algorand/js/multi-countdown.js' %}"></script>
+  <script src="{% static 'algorand/js/jquery.meanmenu.min.js' %}"></script>
+   <!-- End JS File --> 
+</body>
+
+</html>	
