@@ -19,11 +19,18 @@ Link: https://gitcoin.co/issue/algorandfoundation/grow-algorand/121/100027179
 
 # Usage
 
-. bin/activate
+YOU MUST ADD YOUR OWN API KEY IN THE tatum.py file located in env/algorandtatum/algorand
+
+
+
+
+. bin/activate  while in the env directory 
 
 cd algorandtatum/
 
 python manage.py runserver
+
+then navigate to http://localhost:8000/ in your web browser 
 
 
 
