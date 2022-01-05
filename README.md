@@ -11,7 +11,17 @@ Due to the holidays and time crunch I experienced while working on this, there i
 
 While working on this I learned a lot about tatum API calls and blockchain development in general and hope I can finish this even after the bounty has expired. '
 
+NFT BUY AND SELL FEATURES ARE NOT WORKING AS INTENDED
 
+USER MODEL NEEDS UPDATING WITH WALLET ADDRESS AND BALANCE AS WELL AS NFT COLLECTION
+
+NOT VERY SAFE TO STORE KEYS ON DJANGO ADMIN PAGE, COULD USE TATUM KMS SERVICE AS A SUGGESTION
+
+SOME TEMPLATES NEED TO BE UPDATED FOR SCALING AS WELL AS PLACEHOLDERS REMOVED
+
+SOME LOGO ICONS NEED UPDATING
+
+NEED TO CALL SMART CONTRACT CREATION USING TATUM API
 # Gitcoin Bounty Link
 
 Link: https://gitcoin.co/issue/algorandfoundation/grow-algorand/121/100027179
