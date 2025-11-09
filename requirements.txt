@@ -14,7 +14,7 @@ requests==2.32.5
 # psycopg2-binary==2.9.5
 
 # Security
-cryptography==41.0.7
+cryptography==44.0.1
 
 # Additional utilities
 Pillow==10.0.0  # For image handling in NFTs
